@@ -1,0 +1,206 @@
+body {
+  font-size: 16px;
+  color: #fff;
+  background-color: #61122f;
+  font-family: 'Oxygen', sans-serif;
+}
+
+/** button **/
+#button {
+  display: inline-block;
+  background-color: #f6b319;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .3s, 
+    opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+#button::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+#button:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+#button:active {
+  background-color: #555;
+}
+#button.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+
+/** HEADER **/
+#header-nav {
+  background-color: #f6b319;
+  border-radius: 0;
+  border: 0;
+}
+
+
+
+div.navbar-brand {
+  height: 100px;
+  position: absolute;
+  left: 0px;
+  top:  10px;
+}
+
+.navbar-brand h1 { /* Restaurant name */
+  font-family: 'Lora', serif;
+  color: #557c3e;
+   font-size: 50px;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #222;
+  margin: 0px 30px  30px;
+  line-height: .75;
+}
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+hr {
+  width: 50%;
+}
+
+#nav-list {
+  margin-top: 10px;
+}
+#nav-list a {
+  color: #951C49;
+  text-align: center;
+
+}
+#nav-list a:hover {
+  background: #E7E7E7;
+}
+
+#nav-list li {
+  font-size: 20px;
+}
+
+.navbar-default button.navbar-toggle, .navbar-default .icon-bar {
+  border: 1px solid #61122f;
+}
+.navbar-default button.navbar-toggle {
+  
+
+  clear: both;
+  margin-top: 40px;
+}
+/* END HEADER */
+
+/* HOME PAGE */
+div.category-tile{
+  height: 700px;
+   background: rgb(246, 179, 25 ,0.2);
+  box-shadow: 0 1px 5px 1px black;
+  margin: 30px;
+  margin-bottom: 40px;
+  padding: 20px;
+}
+
+#collapsable-nav {
+  background-color: #f6b319;
+  
+}
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* END HOME PAGE */
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+ 
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* Header */
+
+  
+  /* End Header */
+
+  /* Home Page */
+
+  /* End Home Page */
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Home Page */
+
+  /* End Home Page */
+
+}
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+  /* Header */
+
+  .navbar-brand h1 { /* Restaurant name */
+    padding-top: 10px;
+    font-size: 6vw; /* 1vw = 1% of viewport width */
+  }
+
+  #collapsable-nav a { /* Collapsed nav menu text */
+    font-size: 1.2em;
+  }
+  #collapsable-nav a span { /* Collapsed nav menu glyph */
+    font-size: 1em;
+    margin-right: 5px;
+  }
+
+  /* End Header */
+
+  /* Home Page */
+  div.category-tile{
+  height: 100%; 
+   }
+}
+
+/********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
+@media (max-width: 479px) {
+  /* Header */
+  .navbar-brand h1 { /* Restaurant name */
+    padding-top: 5px;
+    font-size: 9vw;
+  }
+  /* End Header */
+  
+  /* Home page */
+
+}
+
+
